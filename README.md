@@ -2,7 +2,7 @@
 ## Winter Quarter 2024
 
 ## Homework 2
-## Due: February 1 before midnight on GitHub Classroom
+## Due: February 2 before midnight on GitHub Classroom
 
 __Question 1 (10%):__ Complete the final project quiz on Canvas.  Note that your ideas can evolve as we approach the project presentations.
 

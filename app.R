@@ -36,9 +36,8 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  path  <- "C:/Users/Julene/Documents/GitHub/DAP2R-pset2/"
-  homicides_community_q3 <- read.csv(paste0(path, "homicides_community_q3.csv"))
-  chi_communities <- st_read(file.path(path, "/geo_export_a7c0c31a-6b8e-4c3f-8f41-d685a35da7a1.shp"))
+  homicides_community_q3 <- read.csv("homicides_community_q3.csv")
+  chi_communities <- st_read(file.path("geo_export_a7c0c31a-6b8e-4c3f-8f41-d685a35da7a1.shp"))
   homicides_community_app <- inner_join(homicides_community_q3, chi_communities, 
                                         by = c("COMMUNITY_AREA" = "community"))
   

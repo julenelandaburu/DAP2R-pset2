@@ -5,7 +5,6 @@
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
-library(tidyverse)
 library(sf)
 
 # Question 2 (40%): For this question, you will be using the City of Chicago 
@@ -21,7 +20,7 @@ library(sf)
 # functions should they be appropriate for your code. 
 
 # Save this code as "question_2.R", and include your downloads from the Data 
-# Portal in your repo. Save your choropleths as .png files and commit them as 
+# Portal in your repo. Save your chloropleths as .png files and commit them as 
 # well. Include 2-4 sentences in the README describing each specific choropleth 
 # is about. Also include in your README a description of the datasets and 
 # shapefile.
@@ -53,7 +52,7 @@ ggplot() +
   geom_sf(data = homicides_community, 
           aes(fill = homicides, geometry = geometry)) +
   scale_fill_gradient(low = "white", high = "darkred") + 
-  labs(title = "Number of Victims of homicides and non-fatal shootings 
+  labs(title = "Number of victims of homicides and non-fatal shootings 
                 in each community area (1992-2023)", 
        fill = element_blank(),
        caption = "Source: City of Chicago") +

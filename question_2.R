@@ -46,7 +46,7 @@ hom_victims_grpd <- homicide_victims %>%
   group_by(COMMUNITY_AREA) %>%
   summarize(homicides = n())
 
-homicides_community <- inner_join(hom_victims_grpd, chi_communities, 
+homicides_community <- right_join(hom_victims_grpd, chi_communities, 
                                   by = c("COMMUNITY_AREA" = "community"))
 
 ggplot() +
@@ -59,7 +59,7 @@ ggplot() +
        caption = "Source: City of Chicago") +
   theme_void()
 
-# Second choropleth FALTA HACER LEFT_JOIN PONIENDO PRIMERO EL SHAPEFILE
+# Second choropleth
 shotspotter_alerts <- shotspotter_alerts %>%
   mutate(YEAR = year(mdy_hms(DATE)))
 

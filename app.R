@@ -8,6 +8,9 @@
 # Note: The edits I did for the data sets are at the end of Q2 R file (I did not 
 # add them here because I wanted only the app part to be on this file)
 
+# This is the link to my deployed app
+# https://julenelandaburu.shinyapps.io/dap2r-pset2/
+
 # Packages
 library(tidyverse)
 library(dplyr)

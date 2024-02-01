@@ -81,8 +81,7 @@ ggplot() +
        caption = "Source: City of Chicago") +
   theme_void()
 
-# These edits to the data are for Q3
-# Homicide dataset
+# These edits to the data are for Q3: homicide dataset
 homicides_community_q3 <- homicide_victims %>%
   filter(YEAR == 2019:2023) %>%
   group_by(YEAR, COMMUNITY_AREA) %>%
@@ -91,10 +90,3 @@ homicides_community_q3 <- homicide_victims %>%
 fname3 <- paste0(path, "homicides_community_q3.csv")
 write.csv(homicides_community_q3, file = fname3)
 
-# Question 4 (10%): Create a free account on shinyapps.io and upload your app.R 
-# file and data files from question 3 to it. Check that the url it generates is 
-# working, and include the url to your Shiny app in a comment at the top of your 
-# app.R file. General note: Mind the size of the data you pick, particularly the 
-# shapefiles. If it becomes quite large you may have issues committing it to 
-# GitHub or uploading it to the shinyapps.io website, so lower resolution is 
-# generally preferred, and test the upload steps early.
